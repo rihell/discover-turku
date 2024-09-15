@@ -16,7 +16,9 @@
   }
   /* Linkin väri */
   .navbar-custom .navbar-nav .nav-link {
-      color: rgba(234, 237, 255, 0.8); 
+      color: rgba(234, 237, 255, 0.8);
+      font-family: "spectral", serif;
+      font-size: 20px;
   }
   /* Aktiivisen & hover-linkin väri */
   .navbar-custom .nav-item.active .nav-link,
@@ -55,16 +57,23 @@
   /* Kuvatekstien väritys */
   /*Otsikon väri */
   .carousel-caption h3 {
-    color:#ffffff
+    color:#ffffff;
+    font-family: "spectral", serif;
+    font-size: 30px;
   }
   /*Kuvatekstin väri */
   .carousel-caption p {
     color: #ffffff;
+    font-family: "spectral", serif;
+    font-size: 20px;
   }
   /*Turku -välilehti*/
   /* Grid-rakenne */
   #tietoa {
       padding-top: 70px; /* Varmistaa, ettei navipalkki peitä otsikkoa */
+      color: #ffffff;
+      font-family: "spectral", serif;
+      font-size: 20px;
   }
   /* Kuvien muotoilu */
   .grid-img {
