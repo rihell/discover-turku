@@ -2,6 +2,7 @@
 .navbar-brand img {
     height: 40px;
     width: auto;
+    margin-right: 20px; /*Enemmän väliä logon ja tekstin välille */
   }
   /* Taustan väri */
   .navbar-custom {
