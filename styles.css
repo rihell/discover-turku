@@ -1,0 +1,149 @@
+/*navbar kuvan skaalaus */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+  }
+  /* Taustan väri */
+  .navbar-custom {
+      background-color: rgba(9, 96, 153, 0.822); 
+  }
+  /* Brändin ja tekstin väri */
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-text {
+      color: rgb(255, 255, 255); 
+  }
+  /* Linkin väri */
+  .navbar-custom .navbar-nav .nav-link {
+      color: rgba(234, 237, 255, 0.8); 
+  }
+  /* Aktiivisen & hover-linkin väri */
+  .navbar-custom .nav-item.active .nav-link,
+  .navbar-custom .nav-item:hover .nav-link {
+      color: #ffffff;
+  }
+  /* Hampurilaiskuvion väri */
+  .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  /* Hampurilaiskuvion kehyksen väri*/
+  .custom-toggler.navbar-toggler {
+    border-color: rgba(9, 96, 153, 0.822);
+  }
+  /* "Matkaoppaat" -valikon linkkien värit hover-tilassa */
+  .nav-item .dropdown-menu a:hover {
+      color: white !important; /* Muuttaa tekstin värin valkoiseksi */
+      background:  rgba(9, 96, 153, 0.822) !important; /* Muuttaa taustavärin vaalean siniseksi */
+  }
+  /* Navigointi linkin väri aktivoituna */
+  .nav-link.active {
+      color: #ffffff !important;
+  }
+  /*Sivuston taustaväri */
+  body {
+    background-color: rgba(9, 96, 153, 0.822);
+    margin: 0;
+    padding: 0;
+  }
+  /*Karusellin koko */
+  .carousel-inner img {
+    width: 100%; /* Asettaa leveyden 100% */
+    margin: auto;
+    height: 100vh;
+  }
+  /* Kuvatekstien väritys */
+  /*Otsikon väri */
+  .carousel-caption h3 {
+    color:#ffffff
+  }
+  /*Kuvatekstin väri */
+  .carousel-caption p {
+    color: #ffffff;
+  }
+  /*Turku -välilehti*/
+  /* Grid-rakenne */
+  #tietoa {
+      padding-top: 70px; /* Varmistaa, ettei navipalkki peitä otsikkoa */
+  }
+  /* Kuvien muotoilu */
+  .grid-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 0 30% 0 30%; /*Pyöristää joka toisen kulman 30%*/
+    margin: 20px 0; /*Lisää marginaalia ylä- ja alareunoihin */
+  }
+  /*Matkailu -sivu */
+  /*Lisää tilaa korttien ja navipalkin väliin*/
+  .container {
+    margin-top: 80px;
+  }
+  /*Korttien ympärillä olevien kolumnien asettelu */
+  .col-md-3  {
+    display: flex; /*Tee kontista joustava*/
+    flex-direction: column; /*Järjestä sisältö pystysuunnassa*/
+  }
+  /*Korttien asettelu*/
+  .card-custom {
+    height: 100%; /* Kortin korkeus venyy täyttämään koko korkeuden */
+    display: flex;
+    flex-direction: column; /* Sisällön asettelu pystysuunnassa */
+    justify-content: space-between; /* Tasataan sisältö */
+  }
+  
+  /* Kuvien skaalaus */
+  .card-img-top {
+    height: 200px; /* Kaikilla kuvilla on sama korkeus */
+    object-fit: cover; /* Kuvat rajautuvat niin, että mittasuhteet pysyvät */
+  }
+  
+  /* Korttien väliin marginaali */
+  .card {
+    flex: 1; /*Kortti venyy täyttämään sarakkeen */
+    display: flex;
+    flex-direction: column;
+  }
+  /*Kortin tekstin sisällön tasaus*/
+  .card-body {
+    flex-grow: 1; /*Venyttää kortin rungon täyttämään tilan*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* Pienemmillä näytöillä kortit allekkain */
+  @media (max-width: 768px) {
+    .col-md-3 {
+      margin-bottom: 20px;
+    }
+  }
+  /*Haitari*/
+  /*Otsikon ja linkin muokkaus */
+  .accordion-button {
+    background-color: rgb(9, 95, 153); /*Taustaväri*/
+    color: white;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: rgba(234, 237, 255, 0.8); /*Aktiivisen otsikon väri */
+  }
+  .accordion-header {
+    font-size: 1.25rem !important; /*Fontin koko*/
+  }
+  /*Kuvan ja tekstin asettelu */
+  .accordion-body img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 15px;
+  }
+  /*Taulukko yhteystiedot -sivulla*/
+  .custom-table {
+    border-color: #ffffff; /*Reunaviivan väri */
+    border-radius: 10px; /*Taulukon reunojen pyöristys*/
+    overflow: hidden;
+  }
+  .custom-table th {
+    background-color: rgba(9, 96, 153, 0.8); /*Otsikkosolun taustaväri */
+    color: white; /*Otsikkosolujen tekstin väri */
+    text-align: center; /*Tekstin tasaus keskelle */
+    padding: 15px; /*Solun sisäinen tyhjä tila */
+    }
+  .custom-table td {
+    background-color: rgba(234, 237, 255, 0.8); /*Tekstin väri soluissa */
+  }
