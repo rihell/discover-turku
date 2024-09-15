@@ -147,3 +147,43 @@
   .custom-table td {
     background-color: rgba(234, 237, 255, 0.8); /*Tekstin väri soluissa */
   }
+  /* Modaalin mukautukset */
+  .modal-content {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  /*Modaalin otsikkoalueen väri*/
+  .modal-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  /*Otsikon fonttikoko */
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  .btn-close {
+    background-color: #ffffff;
+    border: none;
+    font-size: 1.2rem;
+  }
+  /*Leipäteksti osio*/
+  .modal-body {
+    padding: 20px;
+  }
+  /*Modaalin alaosa*/
+  .modal-footer {
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+  }
+  @media (max-width: 768px) {
+    .modal-dialog {
+      max-width: 90%;
+    }
+  }
+  .fixed-bottom-right {
+    position: fixed;
+    bottom: 20px; /* etäisyys sivun alareunasta */
+    right: 20px; /* etäisyys sivun oikeasta reunasta */
+    z-index: 1050; /* varmista, että painike on muiden elementtien päällä */
+  }
