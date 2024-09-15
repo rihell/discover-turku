@@ -71,6 +71,7 @@
   /* Grid-rakenne */
   #tietoa {
       padding-top: 70px; /* Varmistaa, ettei navipalkki peitä otsikkoa */
+      margin-top: 20px;
       color: #ffffff;
       font-family: "spectral", serif;
       font-size: 20px;
@@ -78,9 +79,15 @@
   /* Kuvien muotoilu */
   .grid-img {
     width: 100%;
-    max-width: 500px;
+    height: auto;
     border-radius: 0 30% 0 30%; /*Pyöristää joka toisen kulman 30%*/
-    margin: 20px 0; /*Lisää marginaalia ylä- ja alareunoihin */
+    border: 2px solid white;
+  }
+  /*Lisätään pieni marginaali kuvan ja tekstin väliin pienillä näytöillä */
+  @media (max-width: 767px) {
+    .grid-img {
+      margin-bottom: 20px;
+    }
   }
   /*Matkailu -sivu */
   /*Lisää tilaa korttien ja navipalkin väliin*/
